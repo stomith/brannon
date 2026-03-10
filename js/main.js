@@ -70,6 +70,7 @@ class Gallery {
     }
     
     startAutoplay() {
+        clearInterval(this.autoplayInterval);
         this.autoplayInterval = setInterval(() => this.nextSlide(), 4000);
     }
     
@@ -260,27 +261,24 @@ function initHeaderScroll() {
 // ================================
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize all components
-    new Gallery();
+    const gallery = new Gallery();
     new MobileMenu();
-    
+
     setCurrentYear();
     initSmoothScroll();
     initLazyLoading();
     initScrollAnimations();
     initHeaderScroll();
-    
+
     // Add loaded class for CSS animations
     document.body.classList.add('loaded');
-});
 
-// ================================
-// PAGE VISIBILITY (Pause gallery when tab hidden)
-// ================================
-document.addEventListener('visibilitychange', () => {
-    const gallery = new Gallery();
-    if (document.hidden) {
-        gallery.stopAutoplay();
-    } else {
-        gallery.startAutoplay();
-    }
+    // Pause gallery when tab is hidden
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            gallery.stopAutoplay();
+        } else {
+            gallery.startAutoplay();
+        }
+    });
 });
