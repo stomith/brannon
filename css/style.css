@@ -767,7 +767,12 @@ ul {
     background: var(--dark-deep) !important;
   }
 
-  /* ── Mobile nav dropdown ── */
+  .nav-inner {
+    position: relative;
+    z-index: 901;
+  }
+
+  /* â”€â”€ Mobile nav dropdown â”€â”€ */
   .nav-links {
     position: fixed;
     top: 0;                                    /* anchor to viewport top, not below nav */
@@ -781,11 +786,13 @@ ul {
     padding-top: calc(var(--nav-h) + 1rem);   /* push links below the nav bar */
     padding-bottom: 1.5rem;
     transform: translateY(-100%);              /* -100% from top:0 = fully above viewport */
-    transition: transform 0.35s var(--ease);
+    visibility: hidden;
+    transition: transform 0.35s var(--ease), visibility 0.35s;
   }
 
   .nav-links.open {
     transform: translateY(0);
+    visibility: visible;
   }
 
   .nav-links a {
