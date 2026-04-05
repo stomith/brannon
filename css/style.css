@@ -622,6 +622,7 @@ ul { list-style: none; }
 .contact-block a {
     color: var(--text);
     font-weight: 600;
+    font-size: 1.35rem;
     transition: color 0.2s;
 }
 .contact-block a:hover { color: var(--accent); }
