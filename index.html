@@ -3,181 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brannon Canvas, Upholstery and Awnings - Stockton, CA</title>
+    <title>Brannon Canvas — Upholstery & Awnings, Stockton CA</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Mobile Menu Toggle -->
-    <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container">
-            <h1 class="site-title">Brannon Canvas</h1>
-            <p class="site-tagline">Upholstery and Awnings</p>
-        </div>
-    </header>
 
     <!-- Navigation -->
     <nav class="main-nav" id="mainNav">
-        <div class="container">
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Gallery</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="carpet.html">Carpet & Upholstery</a></li>
-                        <li><a href="patios.html">Patios & Arbors</a></li>
-                        <li><a href="marine.html">Marine Canvas</a></li>
-                        <li><a href="auto.html">Automotive</a></li>
-                    </ul>
-                </li>
-                <li><a href="commercial.html">For Your Business</a></li>
-                <li><a href="home.html">For Your Home</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">Brannon Canvas</a>
+            <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact" class="nav-cta">Contact Us</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section with Image Gallery -->
-    <section class="hero-gallery">
-        <div class="gallery-container">
-            <div class="gallery-slide active">
-                <img src="images/custom/1.jpg" alt="Custom canvas work example 1">
-            </div>
-            <div class="gallery-slide">
-                <img src="images/custom/2.jpg" alt="Custom canvas work example 2">
-            </div>
-            <div class="gallery-slide">
-                <img src="images/custom/3.jpg" alt="Custom canvas work example 3">
-            </div>
-            <div class="gallery-slide">
-                <img src="images/custom/4.jpg" alt="Custom canvas work example 4">
-            </div>
-            <div class="gallery-slide">
-                <img src="images/custom/5.jpg" alt="Custom canvas work example 5">
-            </div>
-            <div class="gallery-slide">
-                <img src="images/custom/6.jpg" alt="Custom canvas work example 6">
-            </div>
-            
-            <!-- Navigation Arrows -->
-            <button class="gallery-prev" aria-label="Previous image">&larr;</button>
-            <button class="gallery-next" aria-label="Next image">&rarr;</button>
-            
-            <!-- Dots -->
-            <div class="gallery-dots"></div>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-carousel" id="heroCarousel">
+            <div class="hero-slide active" style="background-image: url('images/custom/1.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('images/custom/2.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('images/custom/3.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('images/custom/4.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('images/custom/5.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('images/custom/6.jpg')"></div>
         </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">Stockton, California · Est. 25+ Years</p>
+            <h1 class="hero-title">Brannon<br>Canvas</h1>
+            <p class="hero-sub">Upholstery &amp; Awnings — crafted for your home,<br>business, and the water.</p>
+            <a href="#services" class="hero-btn">Explore Our Work</a>
+        </div>
+        <div class="hero-scroll-hint">
+            <span></span>
+        </div>
+        <div class="hero-dots" id="heroDots"></div>
     </section>
 
-    <!-- Feature Thumbnails -->
-    <section class="feature-thumbs">
-        <div class="container">
-            <div class="thumb-grid">
-                <div class="thumb-item">
-                    <img src="images/commercial/t_10.jpg" alt="Commercial canvas services">
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="section-header fade-up">
+            <p class="section-label">What We Do</p>
+            <h2 class="section-title">Our Services</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card fade-up" style="--delay: 0ms">
+                <div class="service-card-img" style="background-image: url('images/Commercial/5.jpg')"></div>
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <p class="service-label">For Your Business</p>
                     <h3>Commercial</h3>
+                    <p>Awnings, canopies, and custom canvas solutions built to represent your business with pride.</p>
                 </div>
-                <div class="thumb-item">
-                    <img src="images/marine/t_2.jpg" alt="Marine canvas services">
-                    <h3>Marine</h3>
+            </div>
+            <div class="service-card fade-up" style="--delay: 80ms">
+                <div class="service-card-img" style="background-image: url('images/marine/1.jpg')"></div>
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <p class="service-label">On the Water &amp; On the Road</p>
+                    <h3>Marine &amp; Automotive</h3>
+                    <p>Biminis, enclosures, and covers for your boat — plus custom canvas and upholstery for your vehicle.</p>
                 </div>
-                <div class="thumb-item">
-                    <img src="images/cu/t_6.jpg" alt="Custom upholstery services">
+            </div>
+            <div class="service-card fade-up" style="--delay: 160ms">
+                <div class="service-card-img" style="background-image: url('images/carpet_and_upholstery/4.jpg')"></div>
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <p class="service-label">Interior &amp; Exterior</p>
                     <h3>Upholstery</h3>
+                    <p>From furniture and boat interiors to auto seats — restored and reupholstered to exacting standards.</p>
                 </div>
-                <div class="thumb-item">
-                    <img src="images/cu/t_12.jpg" alt="Custom canvas work">
-                    <h3>Custom Work</h3>
+            </div>
+            <div class="service-card fade-up" style="--delay: 240ms">
+                <div class="service-card-img" style="background-image: url('images/home/1.jpg')"></div>
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <p class="service-label">For Your Home</p>
+                    <h3>Home</h3>
+                    <p>Patio covers, outdoor furniture, and residential awnings — beautiful and built to last.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Main Content - About Section -->
-    <main class="main-content">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="card-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                            <path d="M2 17l10 5 10-5"></path>
-                            <path d="M2 12l10 5 10-5"></path>
-                        </svg>
-                    </div>
-                    <h2>25+ Years of Experience</h2>
-                    <p>We are an established shop in Central California and have served Stockton and the valley for over twenty-five years.</p>
+    <!-- About / Stats Section -->
+    <section class="section about" id="about">
+        <div class="about-inner">
+            <div class="about-text fade-up">
+                <p class="section-label">Who We Are</p>
+                <h2 class="section-title">Built on Craft,<br>Backed by Trust</h2>
+                <p class="about-body">We are an established shop in Central California, proudly serving Stockton and the greater valley for over twenty-five years. Whether it's awnings for your storefront, canvas for your boat, or upholstery for your home — we deliver quality work, every time.</p>
+                <a href="#contact" class="about-link">Start a project &rarr;</a>
+            </div>
+            <div class="about-stats fade-up" style="--delay: 120ms">
+                <div class="stat">
+                    <span class="stat-number">25<em>+</em></span>
+                    <span class="stat-label">Years in Business</span>
                 </div>
-
-                <div class="about-card">
-                    <div class="card-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                        </svg>
-                    </div>
-                    <h2>BBB Accredited</h2>
-                    <p>We are an accredited business with the Better Business Bureau, and our team of craftsmen work hard to maintain our five-star rating with the Bureau and our customers.</p>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">BBB</span>
+                    <span class="stat-label">Accredited Business</span>
                 </div>
-
-                <div class="about-card">
-                    <div class="card-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                        </svg>
-                    </div>
-                    <h2>Expert Craftsmanship</h2>
-                    <p>Please feel free to call us, send us an e-mail, or just stop by with any questions you may have about your next project. Whether it's awnings, marine canvas, or upholstery for your boat, car, home, or office, let us provide you with a quality product created just for you.</p>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">5<em>★</em></span>
+                    <span class="stat-label">Customer Rating</span>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <!-- Call to Action -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Start Your Project?</h2>
-            <p>Contact us today for a free consultation</p>
-            <a href="contact.html" class="cta-button">Get in Touch</a>
+    <!-- Gallery Section -->
+    <section class="section gallery-section" id="gallery">
+        <div class="section-header fade-up">
+            <p class="section-label">Our Work</p>
+            <h2 class="section-title">Gallery</h2>
+        </div>
+        <div class="gallery-wrap fade-up" style="--delay: 80ms">
+            <div class="gallery-carousel" id="galleryCarousel">
+                <div class="gallery-slide active"><img src="images/custom/1.jpg" alt="Custom canvas work"></div>
+                <div class="gallery-slide"><img src="images/custom/2.jpg" alt="Custom canvas work"></div>
+                <div class="gallery-slide"><img src="images/custom/3.jpg" alt="Custom canvas work"></div>
+                <div class="gallery-slide"><img src="images/home/1.jpg" alt="Home canvas work"></div>
+                <div class="gallery-slide"><img src="images/home/2.jpg" alt="Home canvas work"></div>
+                <div class="gallery-slide"><img src="images/home/3.jpg" alt="Home canvas work"></div>
+                <div class="gallery-slide"><img src="images/Commercial/1.jpg" alt="Commercial canvas work"></div>
+                <div class="gallery-slide"><img src="images/Commercial/2.jpg" alt="Commercial canvas work"></div>
+                <div class="gallery-slide"><img src="images/Commercial/3.jpg" alt="Commercial canvas work"></div>
+            </div>
+            <button class="gallery-prev" aria-label="Previous">&#8592;</button>
+            <button class="gallery-next" aria-label="Next">&#8594;</button>
+            <div class="gallery-dots" id="galleryDots"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="contact-inner">
+            <div class="contact-text fade-up">
+                <p class="section-label">Get in Touch</p>
+                <h2 class="section-title">Ready to Start<br>Your Project?</h2>
+                <p class="contact-body">Stop by, give us a call, or send an email. We're happy to talk through your project and provide a free consultation.</p>
+            </div>
+            <div class="contact-details fade-up" style="--delay: 100ms">
+                <div class="contact-block">
+                    <p class="contact-block-label">Address</p>
+                    <p>945 W. Fremont<br>Stockton, CA 95203</p>
+                </div>
+                <div class="contact-block">
+                    <p class="contact-block-label">Phone</p>
+                    <p><a href="tel:2094652480">209-465-2480</a></p>
+                </div>
+                <div class="contact-block">
+                    <p class="contact-block-label">Hours</p>
+                    <p>Monday – Friday: 8am – 5pm<br>Saturday: By Appointment<br>Sunday: Closed</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>Brannon Canvas</h3>
-                    <p>945 W. Fremont<br>
-                    Stockton, CA 95203<br>
-                    <a href="tel:2094652480">209-465-2480</a></p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="commercial.html">For Your Business</a></li>
-                        <li><a href="home.html">For Your Home</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-hours">
-                    <h4>Business Hours</h4>
-                    <p>Monday - Friday: 8am - 5pm<br>
-                    Saturday: By Appointment<br>
-                    Sunday: Closed</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> Brannon Canvas. All rights reserved.</p>
-            </div>
+        <div class="footer-inner">
+            <span class="footer-logo">Brannon Canvas</span>
+            <span class="footer-copy">&copy; <span id="year"></span> Brannon Canvas. Stockton, CA.</span>
         </div>
     </footer>
 
