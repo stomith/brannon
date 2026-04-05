@@ -707,6 +707,10 @@ ul { list-style: none; }
 @media (max-width: 768px) {
     :root { --nav-h: 60px; }
 
+    .main-nav {
+        background: var(--dark-deep) !important;
+    }
+
     .nav-links {
         position: fixed;
         top: var(--nav-h);
