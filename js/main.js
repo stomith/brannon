@@ -33,8 +33,9 @@ function initMobileMenu() {
     });
 
     // Close on outside click
+    const navEl = document.getElementById('mainNav');
     document.addEventListener('click', (e) => {
-        if (!nav.contains(e.target)) {
+        if (!navEl.contains(e.target)) {
             links.classList.remove('open');
             btn.classList.remove('open');
         }
