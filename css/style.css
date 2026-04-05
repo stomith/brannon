@@ -733,7 +733,16 @@ ul { list-style: none; }
         padding: 0.9rem 2rem;
         color: var(--accent);
     }
-    .nav-hamburger { display: flex; }
+    .nav-hamburger { display: flex; flex-shrink: 0; }
+
+    .nav-logo {
+        font-size: 0.72rem;
+        letter-spacing: 0.03em;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
 
     .hero-title { font-size: clamp(2.8rem, 12vw, 5rem); }
     .hero-content { padding: 0 1.5rem 4rem; }
